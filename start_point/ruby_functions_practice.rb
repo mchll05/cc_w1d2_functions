@@ -26,28 +26,30 @@ end
 def join_string(string_1, string_2)
   string_1 = "Mary had a little lamb, "
   string_2 = "it's fleece was white as snow"
-return string_1 + string_2
+  return string_1 + string_2
 end
 
 def add_string_as_number(first_number, second_number)
-return first_number.to_i + second_number.to_i
+  return first_number.to_i + second_number.to_i
 end
 
-def number_to_full_name(month_string, full_month_name)
-first_month_string = "January"
-second_month_string = "February"
-third_month_string = "March"
-fourth_month_string = "April"
-fifth_month_string = "May"
-sixth_month_string = "June"
-seventh_month_string = "July"
-eighth_month_string = "August"
-ninth_month_string = "September"
-tenth_month_string = "October"
-eleventh_month_string = "November"
-twelfth_month_string = "December"
+def number_to_full_name(month_string)
+case month_string
+when 1
+  return "January"
+when 3
+  return "March"
+when 9
+  return "September"
+end
 
-
-
-
+def test_substring(month_string)
+  case month_string
+  when 1
+    return "Jan"
+  when 3
+    return "Mar"
+  when 9
+    return "Sep"
+  end
 end
