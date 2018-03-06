@@ -43,7 +43,7 @@ when 9
   return "September"
 end
 
-def test_substring(month_string)
+def substring(month_string)
   case month_string
   when 1
     return "Jan"
