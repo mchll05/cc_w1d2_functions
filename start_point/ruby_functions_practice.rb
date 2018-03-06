@@ -26,30 +26,34 @@ end
 def join_string(string_1, string_2)
   string_1 = "Mary had a little lamb, "
   string_2 = "it's fleece was white as snow"
-  return string_1 + string_2
+return string_1 + string_2
 end
 
 def add_string_as_number(first_number, second_number)
-  return first_number.to_i + second_number.to_i
+return first_number.to_i + second_number.to_i
 end
 
-def number_to_full_name(month_string)
-case month_string
-when 1
-  return "January"
-when 3
-  return "March"
-when 9
-  return "September"
-end
-
-def substring(month_string)
-  case month_string
+def number_to_full_month_name(month_string)
+  result = case month_string
   when 1
-    return "Jan"
-  when 3
-    return "Mar"
-  when 9
-    return "Sep"
+      "January"
+    when 3
+      "March"
+    when 9
+      "September"
   end
+  return result
+end
+
+
+def number_to_short_month_name(month_string)
+  result = case month_string
+  when 1
+      "Jan"
+    when 3
+      "Mar"
+    when 9
+      "Sep"
+  end
+  return result
 end
